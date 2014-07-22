@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="wrapper">
+  <header id="header">
+    <h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+  </header> <!--header-->
+
+  <ul id="projects" class="group">
+    <h3>Projects</h3>
+    {% for post in posts %}
+    <li><a href='/{{ post.path }}'><span>{{ post.title }}</span></a><span class="client"> &ndash; {{ post.tags }}</span></li>
+    {% endfor %}
+  </ul> <!--projects-->
+  
+  {% block footer %}
+  <footer id="footer">
+  </footer>
+  {% endblock footer %}
+</section> <!--wrapper-->
+
+{% endblock content %}
