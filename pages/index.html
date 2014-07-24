@@ -3,14 +3,23 @@
 <section id="wrapper">
   <header id="header">
     <h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+    <nav><a href="/about.html">About</a><h1>Contact</h1></nav>
   </header> <!--header-->
 
-  <ul id="projects" class="group">
+  <ul id="stuff_list" class="group">
     <h3>Projects</h3>
     {% for post in posts %}
     <li><a href='/{{ post.path }}'><span>{{ post.title }}</span></a><span class="client"> &ndash; {{ post.tags }}</span></li>
     {% endfor %}
   </ul> <!--projects-->
+
+  <ul id="stuff_list" class="group">
+    <h3>Social</h3>
+    <li><a href='http://twitter.com/bengold'><span class="twitter">twitter.com/bengold</span></a></li>
+    <li><a href='http://ben.tumblr.com/'><span class="tumblr">ben.tumblr.com</span></a></li>
+    <li><a href='http://dribbble.com/beng'><span class="dribbble">dribbble.com/beng</span></a></li>
+    <li><a href='http://instagram.com/bengold'><span class="instagram">instagram.com/bengold</span></a></li>
+  </ul>
   
   {% block footer %}
   <footer id="footer">

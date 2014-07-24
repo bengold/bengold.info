@@ -7,8 +7,16 @@ date: 22-7-2014
 {% block body %}
 {% filter markdown %}
 
-
-<img class="featured 2x" src="{% static '/images/image-full.jpg' %}"/>
+<div class="owl-carousel">
+  <div><img src="{% static '/images/1@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/2@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/test@2x.png' %}" style="width:50%"/></div>
+  <div><img src="{% static '/images/3@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/4@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/5@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/6@2x.png' %}" style="width:320px;"/></div>
+  <div><img src="{% static '/images/7@2x.png' %}" style="width:320px;"/></div>
+</div>
 
 Displays images in a grid, with individual pages optionally describing the image in detail, or displaying more images. Images have a max-width of 400 pixels by default.
 

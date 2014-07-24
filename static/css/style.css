@@ -35,7 +35,7 @@ html,body {
 }
 
 body {
-    font:13px/1 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font:16px/1 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color:#777;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
@@ -44,33 +44,38 @@ body {
 
 #wrapper {
     padding:40px 40px 100px 40px;
-    max-width: 880px;
     margin:0;
 }
 
 #wrapper.post {
-    max-width:880px;
 }
 
-#header {
+.slider {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: right;
 }
 
 img {
     max-width:100%;
 }
 
-#projects li {
+#stuff_list li {
     list-style: none;
     margin-top: 15px;
     margin-left: 20px;
+    font-size:13px;
 }
 
-#projects {
-    margin:0 auto;
+#stuff_list {
+    margin:0 0 25px 0;
     text-align:left;
 }
 
-#projects a,#projects a span {
+#stuff_list a,#stuff_list a span {
     -webkit-transition:all 0.2s ease;
     -moz-transition:all 0.2s ease;
     -ms-transition:all 0.2s ease;
@@ -78,28 +83,41 @@ img {
     transition:all 0.2s ease;
 }
 
-#projects a span {
+#stuff_list a span {
     color:#222;
-    font-size:13px;
     font-weight:400;
 }
 
-#projects .client {
+#stuff_list .client {
     font-weight:200;
     display: none;
 }
 
-#projects li:hover .client{
+#stuff_list li:hover .client{
     display: inline;
 }
 
-#projects a:hover {
+#stuff_list a:hover {
     opacity:.85;
 }
 
-#projects a:hover span {
+#stuff_list a:hover span {
     opacity:1;
+    color: #3498db;
     visibility:visible;
+}
+
+#stuff_list a:hover .twitter {
+    color: #55acee;
+}
+#stuff_list a:hover .tumblr {
+    color: #44546B;
+}
+#stuff_list a:hover .dribbble {
+    color: #EA4C89;
+}
+#stuff_list a:hover .instagram {
+    color: #3F729B;
 }
 
 #footer { 
@@ -117,7 +135,7 @@ Typography
 /*Accent color*/
 a   {
     text-decoration:none; 
-    color:#5694f1;
+    color:#3498db;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -144,9 +162,8 @@ h1 {
 h3 {
     font-size:13px;
     font-weight:400;
-    color:#bbb;
+    color:#bdc3c7;
     margin-bottom:6px;
-    text-transform: upp
 }
 
 h4 {
